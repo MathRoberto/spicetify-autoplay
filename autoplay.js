@@ -1,14 +1,14 @@
 (async function autoplay() {
-    // Espera a API do Spicetify carregar o Player
+    // Wait for the Spicetify Player API to load completely
     while (!Spicetify.Player) {
         await new Promise(resolve => setTimeout(resolve, 100));
     }
 
-    // Espera um pouco para garantir que o Spotify carregou o estado da última música
+    // Wait a moment to ensure Spotify has loaded the last track state/context
     setTimeout(() => {
-        // Só dá play se estiver pausado
+        // Only attempt to play if the player is currently paused
         if (!Spicetify.Player.isPlaying()) {
             Spicetify.Player.play();
         }
-    }, 1000); // 1 segundo de delay é o ponto ideal
+    }, 1000); // 1000ms delay ensures the UI is ready
 })();
