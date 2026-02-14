@@ -4,7 +4,7 @@ A simple, lightweight extension for [Spicetify](https://github.com/spicetify/spi
 
 No more silence when launching the app!
 
-## 🚀 Features
+## Features
 
 - **Instant Resume:** Automatically plays the last track or context upon launch.
 - **Smart Check:** Only attempts to play if the player is currently paused to avoid conflicts.
@@ -13,7 +13,7 @@ No more silence when launching the app!
 🛠 How it works
 The script waits for the Spicetify Player API to initialize, waits a safe 1-second buffer for Spotify to load its internal state, and then sends a play command if the player is paused.
 
-## 📦 Installation
+## Installation
 
 ### Manual Installation
 
