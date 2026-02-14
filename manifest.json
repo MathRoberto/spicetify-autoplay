@@ -1,0 +1,13 @@
+{
+  "name": "Autoplay",
+  "description": "Automatically resumes music playback when Spotify starts.",
+  "main": "autoplay.js",
+  "authors": [
+    {
+      "name": "Matheus Ferraz",
+      "url": "https://github.com/MathRoberto"
+    }
+  ],
+  "readme": "README.md",
+  "version": "1.0.0"
+}
