@@ -10,6 +10,9 @@ No more silence when launching the app!
 - **Smart Check:** Only attempts to play if the player is currently paused to avoid conflicts.
 - **Lightweight:** Minimal code, runs once at startup.
 
+🛠 How it works
+The script waits for the Spicetify Player API to initialize, waits a safe 1-second buffer for Spotify to load its internal state, and then sends a play command if the player is paused.
+
 ## 📦 Installation
 
 ### Manual Installation
@@ -24,5 +27,3 @@ No more silence when launching the app!
 spicetify config extensions autoplay.js
 spicetify apply
 
-🛠 How it works
-The script waits for the Spicetify Player API to initialize, waits a safe 1-second buffer for Spotify to load its internal state, and then sends a play command if the player is paused.
