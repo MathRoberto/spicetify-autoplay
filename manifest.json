@@ -2,7 +2,7 @@
   "name": "Autoplay",
   "description": "Automatically resumes music playback when Spotify starts.",
   "main": "autoplay.js",
-  "preview": "preview.png",
+  "preview": "icon.svg",
   "authors": [
     {
       "name": "Matheus Ferraz",
